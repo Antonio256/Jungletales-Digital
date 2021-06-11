@@ -394,12 +394,14 @@ h1{
     h1{
         font-size: 1.5em;
         text-align: start;
-        /* margin: 10px; */
+        margin: 10px;
+        width: 100%;
     }
 
-    h3{
-        font-size: 1.6em;
+    h2, h3{
+        font-size: 1.2em;
     }
+
     .services {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -475,6 +477,11 @@ h1{
     .services{
         grid-template-columns: 1fr;
     }
+
+    .nav .social-icons .email-icon{
+    position: absolute;
+    bottom: 10px;
+    }
 }
 
 @media (max-width: 700px) {
@@ -490,5 +497,11 @@ h1{
         background-size: contain;
         
     }
+    .home-content{
+        text-align: start;
+        
+    }
+    .nav .social-icons .email-icon{
+        bottom: 5px;
+    }
 }
-
