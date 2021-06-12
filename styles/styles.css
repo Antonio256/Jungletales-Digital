@@ -42,10 +42,11 @@ html, body{
 section{
     display: flex;
     flex-direction: column; 
-    height: 90vh;
+    height: 100%;
     align-items: center;
-    padding: 100px;
-    margin-top: 60px;
+    padding: 50px;
+    margin: 50px;
+    border: 2px solid red;
 }
 
 form .hidden{
@@ -169,7 +170,6 @@ p{
 }
 
 /* Home Page */
-
 .home-image{
     max-width: 600px;
     position: absolute;
@@ -184,6 +184,9 @@ p{
     max-width: 600px;
     z-index: 10;
     color: #000;
+    border: 1px solid #000;
+    padding: 5px;
+    margin: 5px;
 }
 
 h1{
@@ -393,9 +396,7 @@ h1{
    
     h1{
         font-size: 1.5em;
-        text-align: start;
-        margin: 10px;
-        width: 100%;
+        text-align: center;
     }
 
     h2, h3{
@@ -447,8 +448,10 @@ h1{
 }
 
 @media (max-width: 768px){
+    .home-content{
+        text-align: center;   
+    }
     
-
     .contact {
         flex-direction: column;
     }
@@ -479,10 +482,10 @@ h1{
     }
 
     .nav .social-icons .email-icon{
-    position: absolute;
-    bottom: 10px;
+    bottom: 5px;
     }
 }
+
 
 @media (max-width: 700px) {
     .partner-img{
@@ -491,14 +494,13 @@ h1{
     }
 
     .logo img{
-        /* justify-content: center; */
+        align-content: center;
         width: 40%;
         height: 40%;
-        background-size: contain;
         
     }
     .home-content{
-        text-align: start;
+        text-align: center;
         
     }
     .nav .social-icons .email-icon{
