@@ -37,6 +37,7 @@ html, body{
     background-size: 100px;
     width: 50%;
     height: 50%;
+    
 }
 
 section{
@@ -44,9 +45,9 @@ section{
     flex-direction: column; 
     height: 100%;
     align-items: center;
-    padding: 50px;
+    padding: 30px;
     margin: 50px;
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 form .hidden{
@@ -184,7 +185,7 @@ p{
     max-width: 600px;
     z-index: 10;
     color: #000;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     padding: 5px;
     margin: 5px;
 }
@@ -194,6 +195,7 @@ h1{
     font-weight: 800;
     font-size: 2.2em;
     line-height: 2em;   
+    padding-top: 15px;
 }
 
 h2{
@@ -507,3 +509,23 @@ h1{
         bottom: 5px;
     }
 }
+
+@media (max-width: 320px){
+    h1{
+        font-size: 0.9em;
+        text-align: start;
+    }
+    h2, h3{
+        font-size: 0.5rem;
+        text-align: start;
+    }
+
+    .home-content{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin: auto;
+        /* text-align: start; */
+    }
+
+} 
