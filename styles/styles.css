@@ -494,7 +494,13 @@ h3{
 
     .home .home-content{
         padding-top: 100px;
-        /* border: 1px solid red; */
+        border: 1px solid red;
+        
+    }
+
+    .home .home-content h1{
+        /* padding: 30px; */
+        padding-top: 5px;
         
     }
     .partner-img{
@@ -512,9 +518,9 @@ h3{
     }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 300px) {
     .home .home-content h1{
-        padding-top: 400px;
+        /* padding-top: 10px; */
         
     }
 }
