@@ -446,7 +446,7 @@ h3{
         align-items: flex-start;
         margin-bottom: 10px;
         color: #fff;
-        /* z-index: -5; */
+        z-index: -5;
     }
 
     section{
@@ -493,7 +493,8 @@ h3{
 @media (max-width: 700px) {
 
     .home .home-content{
-        padding-top: 50px;
+        padding-top: 100px;
+        /* border: 1px solid red; */
         
     }
     .partner-img{
@@ -511,8 +512,9 @@ h3{
     }
 }
 
-@media (max-width: 320px) {
-    .home .home-content{
-        padding-top: 50px;
+@media (max-width: 500px) {
+    .home .home-content h1{
+        padding-top: 400px;
+        
     }
 }
