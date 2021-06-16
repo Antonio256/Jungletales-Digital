@@ -494,13 +494,13 @@ h3{
 
     .home .home-content{
         padding-top: 100px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         
     }
 
     .home .home-content h1{
         /* padding: 30px; */
-        padding-top: 5px;
+        padding-top: 20px;
         
     }
     .partner-img{
