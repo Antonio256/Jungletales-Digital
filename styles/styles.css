@@ -20,12 +20,10 @@ html, body{
     overflow: none;
 }
 
-
 .logo{
     position: absolute;
     top: 30px;
-    left: 100px;
-    /* font-weight: 700; */
+    left: 90px;
     cursor: pointer;
     font-size: 2rem;
     z-index: 20;
@@ -43,11 +41,15 @@ html, body{
 section{
     display: flex;
     flex-direction: column; 
-    height: 100%;
+    height: 100vh;
     align-items: center;
-    padding: 30px;
-    margin: 50px;
-    /* border: 2px solid red; */
+    padding: 100px;
+    margin-top: 60px;
+}
+
+section.home{
+    flex-direction: row;
+    margin-top: 0;
 }
 
 form .hidden{
@@ -69,6 +71,7 @@ form .hidden{
     z-index: 20;
     cursor: pointer; 
 }
+
 .toggle.active{
     color: #fff;
     background: var(--primary-color) url(../images/close.png);
@@ -176,26 +179,25 @@ p{
     position: absolute;
     right: 0;
     bottom: 0;
-    height: 110%;
+    height: 100%;
     z-index: 5;
 }
 
 .home-content{
     position: relative;
-    max-width: 600px;
+    max-width: 700px;
     z-index: 10;
     color: #000;
-    /* border: 1px solid #000; */
-    padding: 5px;
-    margin: 5px;
+    padding-top: 50px;
+    margin: 5px 20px;
 }
 
 h1{
     
-    font-weight: 800;
+    font-weight: 700;
     font-size: 2.2em;
     line-height: 2em;   
-    padding-top: 15px;
+    padding-top: 30px;
 }
 
 h2{
@@ -217,12 +219,6 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: start;
-}
-
-h1{
-    text-align: center;
-    font-size: 700;
-    line-height: 1.2em;
 }
 
 .contact-form{
@@ -392,13 +388,8 @@ h1{
 
 /* Media */
 @media (max-width: 1024px){
-    .home-image{
-        display: none;
-    }
-   
     h1{
         font-size: 1.5em;
-        text-align: center;
     }
 
     h2, h3{
@@ -449,11 +440,20 @@ h1{
 
 }
 
-@media (max-width: 768px){
-    .home-content{
-        text-align: center;   
+@media (max-width: 799px){
+    .home-image{
+        display: none;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        color: #fff;
+        /* z-index: -5; */
     }
-    
+
+    section{
+        padding: 100px 40px;
+        
+    }
+
     .contact {
         flex-direction: column;
     }
@@ -486,46 +486,33 @@ h1{
     .nav .social-icons .email-icon{
     bottom: 5px;
     }
+
 }
 
 
 @media (max-width: 700px) {
+
+    .home .home-content{
+        padding-top: 50px;
+        
+    }
     .partner-img{
         display: none;
         
     }
 
-    .logo img{
-        align-content: center;
-        width: 40%;
-        height: 40%;
-        
+    .logo{
+        top: 20px;
+        left: 20px;
     }
-    .home-content{
-        text-align: center;
-        
-    }
+    
     .nav .social-icons .email-icon{
         bottom: 5px;
     }
 }
 
-@media (max-width: 320px){
-    h1{
-        font-size: 0.9em;
-        text-align: start;
+@media (max-width: 320px) {
+    .home .home-content{
+        padding-top: 50px;
     }
-    h2, h3{
-        font-size: 0.5rem;
-        text-align: start;
-    }
-
-    .home-content{
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        margin: auto;
-        /* text-align: start; */
-    }
-
-} 
+}
