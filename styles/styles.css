@@ -500,7 +500,7 @@ h3{
 
     .home .home-content h1{
         /* padding: 30px; */
-        padding-top: 20px;
+        padding-top: 25px;
         
     }
     .partner-img{
@@ -520,7 +520,7 @@ h3{
 
 @media (max-width: 300px) {
     .home .home-content h1{
-        /* padding-top: 10px; */
+        padding-top: 30px;
         
     }
 }
