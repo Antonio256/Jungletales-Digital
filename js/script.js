@@ -22,6 +22,7 @@ const msg = document.querySelector('.msg');
 const success = document.querySelector('.success');
 
 
+// Implement form
 form.addEventListener('submit', onSubmit);
 
 function onSubmit(e){
