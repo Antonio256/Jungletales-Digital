@@ -7,7 +7,7 @@ toggle.addEventListener('click', () => {
     nav.classList.toggle('active');
 })
 
-logo.addEventListener('click', function(){
+logo.addEventListener('click', () => {
     // alert('it works');
     window.location.href = "index.html";
 })
@@ -23,33 +23,33 @@ const success = document.querySelector('.success');
 
 
 // Implement form
-form.addEventListener('submit', onSubmit);
+// form.addEventListener('submit', onSubmit);
 
-function onSubmit(e){
+// function onSubmit(e){
     
-    e.preventDefault();
-    // console.log(nameInput.value);
+//     e.preventDefault();
+//     // console.log(nameInput.value);
 
-    if(nameInput.value === "" || emailInput.value === "" || messageInput.value === ""){
-        msg.classList.add('error');
-        msg.innerHTML = 'Please enter all Fields';
+//     if(nameInput.value === "" || emailInput.value === "" || messageInput.value === ""){
+//         msg.classList.add('error');
+//         msg.innerHTML = 'Please enter all Fields';
 
-        setTimeout( () => {
-            msg.remove()
-        }, 3000);
+//         setTimeout( () => {
+//             msg.remove()
+//         }, 3000);
 
-    }else{
-        msg.classList.add('success');
-        msg.innerHTML = 'Thank You. We will review the submission soon.';
+//     }else{
+//         msg.classList.add('success');
+//         msg.innerHTML = 'Thank You. We will review the submission soon.';
 
-        setTimeout( () => {
-            msg.remove()
-        }, 3000);
+//         setTimeout( () => {
+//             msg.remove()
+//         }, 3000);
 
-        // Clear the fields
-        nameInput.value = "";
-        emailInput.value = "";
-        messageInput.value = "";
-    }
+//         // Clear the fields
+//         nameInput.value = "";
+//         emailInput.value = "";
+//         messageInput.value = "";
+//     }
   
-} 
+// } 
